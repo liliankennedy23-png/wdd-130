@@ -4,22 +4,29 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Whitewater Rapids — Home</title>
+    <title>Whitewater Rapids — About Us</title>
 
+    <!-- Replace the description with a short enticing summary -->
     <meta name="description"
         content="Whitewater Rapids: guided white water rafting adventures, family-friendly trips, and experienced river guides." />
-    <meta name="author" content="Lillian Kennedy" />
+    <!-- Replace Your Full Name with your name -->
+    <meta name="Lillian Kennedy" content="Your Full Name" />
 
-    <link rel="stylesheet" href="rafting.css" />
+    <!-- Link to CSS in the wwr/styles folder -->
+    <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
 <body>
     <header>
+        <!-- header: logo and check-your-understanding placeholder -->
         <div class="logo-and-cta">
+            <!-- Put your logo in images/logo.png (or update src) -->
             <img src="logo.png" alt="Whitewater Rapids logo" class="logo" />
+            <!-- Small helper/assignment text (course asked for "Check Your Understanding") -->
             <div class="cta">Check Your Understanding</div>
         </div>
 
+        <!-- primary navigation (links to pages that may not exist yet) -->
         <nav class="mainnav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -29,10 +36,13 @@
     </header>
 
     <main>
+        <!-- Hero area with image (image file placed in images/) -->
         <div class="hero">
+            <!-- the hero image acts like a background but is included as an img per instructions -->
             <img src="hero-river.jpg" alt="Rafting on a whitewater river" />
             <h1>Whitewater Rapids</h1>
 
+            <!-- Article overlay on the hero -->
             <article class="hero-article">
                 <img src="happy-client.jpg" alt="Happy rafting client" />
                 <p>
@@ -44,22 +54,26 @@
             </article>
         </div>
 
+        <!-- History section -->
         <section class="history">
             <h2>History</h2>
             <p>
                 Founded in 2005 by a group of river guides, Whitewater Rapids started as a small local outfitter
-                and has since grown into a trusted regional company known for safety and fun.
+                and has since grown into a trusted regional company known for safety and fun. (Placeholder text.)
             </p>
         </section>
 
+        <!-- Adventure section (empty for now per assignment) -->
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
+            <!-- Content/images will be added in the next assignment -->
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year">2025</span> Whitewater Rapids — Lillian Kennedy</p>
+        <p>&copy; <span id="year">2025</span> Whitewater Rapids — Your Full Name</p>
 
+        <!-- Social media image links (replace href and src with real links and icon paths) -->
         <nav class="socialmedia" aria-label="Social media">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener">
                 <img src="icon-facebook.png" alt="Facebook" />
@@ -73,6 +87,7 @@
         </nav>
     </footer>
 
+    <!-- Small script to set the year automatically (optional) -->
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>

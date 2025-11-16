@@ -1,0 +1,168 @@
+/* rafting.css - styles for Whitewater Rapids site */
+
+/* 1. CSS variables (choose colors & fonts you like) */
+:root{
+  --primary-color: #0b5a80;    /* headings, accents */
+  --accent1-color: #2aa198;    /* body text color used in example */
+  --accent2-color: #ff8a00;    /* secondary accent */
+  --body-font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --max-width: 840px;
+}
+
+/* 2. Reset box model & spacing */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. Body */
+body{
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fbfbfb;
+  line-height: 1.5;
+}
+
+/* 4. Limit page width and center header, main, footer */
+header, main, footer{
+  width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* 5. Headings */
+h1, h2{
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* 6. Basic spacing for nav, p, section, article */
+nav, p, section, article{
+  margin: 16px;
+  padding: 8px;
+}
+
+/* 7. Header layout */
+.logo-and-cta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.logo{
+  height: 56px;
+  width: auto;
+  display: block;
+}
+.cta{
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+/* 8. Main nav */
+.mainnav{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.mainnav a{
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 6px 8px;
+}
+
+/* 9. Hero styles */
+.hero{
+  position: relative; /* so h1 and article can be absolutely positioned */
+  margin: 8px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* hero image fills width */
+.hero img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* hero heading overlay */
+.hero h1{
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.9;
+  background-color: rgba(11,90,128,0.85); /* fallback using primary color */
+  color: #fff;
+  font-size: 2rem;
+  left: 0;
+}
+
+/* hero article overlay (bottom-left) */
+.hero-article{
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  width: calc(100% - 32px);
+  max-width: 480px;
+  background-color: rgba(255,255,255,0.92);
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* image inside hero article floated to right */
+.hero-article img{
+  float: right; /* required by assignment */
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+
+/* ensure text clears floats later in layout */
+.hero-article:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 10. History and adventure sections */
+.history, .adventure{
+  margin: 20px 16px;
+  padding: 12px;
+}
+
+/* 11. Footer */
+footer{
+  margin-top: 24px;
+  padding: 12px 16px;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 12. Social media links: remove underline for image links */
+.socialmedia a{
+  text-decoration: none;
+  margin-left: 8px;
+}
+.socialmedia img{
+  height: 28px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* 13. Small responsive adjustments */
+@media (max-width: 900px){
+  header, main, footer{
+    width: 95%;
+  }
+  .hero h1{ font-size: 1.6rem; padding: 10px; }
+  .hero-article{ max-width: 100%; left: 8px; right: 8px; }
+}
