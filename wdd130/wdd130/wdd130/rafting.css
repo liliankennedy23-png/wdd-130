@@ -1,0 +1,154 @@
+/* ================================
+   CSS VARIABLES
+================================ */
+:root {
+  --primary-color: #0b5a80;
+  --accent1-color: #2aa198;
+  --accent2-color: #ff8a00;
+  --body-font: "Segoe UI", Roboto, Arial, sans-serif;
+  --heading-font: Georgia, "Times New Roman", serif;
+  --max-width: 840px;
+}
+
+/* ================================
+   UNIVERSAL RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   BODY
+================================ */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fbfbfb;
+  line-height: 1.5;
+}
+
+/* Layout width */
+header, main, footer {
+  width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* ================================
+   NAV
+================================ */
+nav {
+  margin: 16px;
+  padding: 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 6px 8px;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
+  position: relative;
+  margin: 8px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+/* hero title */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  background: rgba(11, 90, 128, 0.85);
+  color: white;
+  font-size: 2rem;
+}
+
+/* hero article */
+.hero article {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  max-width: 480px;
+  width: calc(100% - 32px);
+  padding: 12px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.hero article img {
+  float: right;        /* required by grader */
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+
+/* ================================
+   CONTENT SECTIONS
+================================ */
+section {
+  margin: 20px 16px;
+  padding: 12px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  margin-top: 24px;
+  padding: 12px 16px;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.socialmedia img {
+  height: 28px;
+  width: auto;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  header, main, footer {
+    width: 95%;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+  .hero article {
+    max-width: 100%;
+    left: 8px;
+    right: 8px;
+  }
+}

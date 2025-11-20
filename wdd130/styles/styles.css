@@ -1,0 +1,59 @@
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  max-width: 840px;
+  margin: 2rem auto;
+}
+
+h1 {
+  color: #2a4a7b;
+}
+
+/* Profile Image */
+main img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #444;
+  padding: 4px;
+  box-shadow: 0 0 10px #888;
+}
+
+/* Aside Section */
+aside {
+  width: 300px;
+  margin: 1.5rem auto;
+  border: 1px solid #888;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Paragraphs */
+p {
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 1rem;
+}
