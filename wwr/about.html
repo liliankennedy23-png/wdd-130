@@ -1,96 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Whitewater Rapids — About Us</title>
-
-    <!-- Replace the description with a short enticing summary -->
-    <meta name="description"
-        content="Whitewater Rapids: guided white water rafting adventures, family-friendly trips, and experienced river guides." />
-    <!-- Replace Your Full Name with your name -->
-    <meta name="Lillian Kennedy" content="Your Full Name" />
-
-    <!-- Link to CSS in the wwr/styles folder -->
-    <link rel="stylesheet" href="rafting.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting | About Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <!-- header: logo and check-your-understanding placeholder -->
-        <div class="logo-and-cta">
-            <!-- Put your logo in images/logo.png (or update src) -->
-            <img src="logo.png" alt="Whitewater Rapids logo" class="logo" />
-            <!-- Small helper/assignment text (course asked for "Check Your Understanding") -->
-            <div class="cta">Check Your Understanding</div>
-        </div>
+        <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
 
-        <!-- primary navigation (links to pages that may not exist yet) -->
-        <nav class="mainnav" aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero area with image (image file placed in images/) -->
-        <div class="hero">
-            <!-- the hero image acts like a background but is included as an img per instructions -->
-            <img src="hero-river.jpg" alt="Rafting on a whitewater river" />
-            <h1>Whitewater Rapids</h1>
 
-            <!-- Article overlay on the hero -->
-            <article class="hero-article">
-                <img src="happy-client.jpg" alt="Happy rafting client" />
-                <p>
-                    At Whitewater Rapids our mission is to deliver safe, exhilarating, and
-                    memorable river adventures for families and thrill-seekers alike.
-                    Our experienced guides, modern equipment, and passion for rivers
-                    ensure you leave with a smile (and a great story).
-                </p>
-            </article>
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure">
+            <h1>About Us</h1>
         </div>
 
-        <!-- History section -->
+        <!-- HISTORY SECTION -->
         <section class="history">
-            <h2>History</h2>
-            <p>
-                Founded in 2005 by a group of river guides, Whitewater Rapids started as a small local outfitter
-                and has since grown into a trusted regional company known for safety and fun. (Placeholder text.)
-            </p>
+            <h2>Our History</h2>
+
+            <div class="history-grid">
+                <p>
+                    White Water Raft Co. started over 30 years ago when two friends decided to share their love of
+                    white-water rafting with others. What started as a small weekend hobby quickly grew as more people
+                    discovered the beauty and excitement to the river.
+                </p>
+
+                <img src="images/history.jpg" alt="Rafting History">
+
+                <p>
+                    Today we run dozens of trips every year through some of the most thrilling rapids in the region. Our
+                    mission is to provide safe, unforgettable adventures for families, friends, beginners, and expert
+                    rafters alike.
+                </p>
+            </div>
         </section>
 
-        <!-- Adventure section (empty for now per assignment) -->
-        <section class="adventure">
+        <!-- ADVENTURES SECTION -->
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <!-- Content/images will be added in the next assignment -->
+
+            <div class="adventure-gallery">
+
+                <figure>
+                    <img src="images/rapid1.jpg" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rapid2.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rapid3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rapid4.jpg" alt="Thunder Run">
+                    <figcaption>Thunder Run</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rapid5.jpg" alt="Lava Falls">
+                    <figcaption>Lava Falls</figcaption>
+                </figure>
+
+            </div>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; <span id="year">2025</span> Whitewater Rapids — Your Full Name</p>
+        <p>©2025 White Water Rafting Co. | Lillian Kennedy</p>
 
-        <!-- Social media image links (replace href and src with real links and icon paths) -->
-        <nav class="socialmedia" aria-label="Social media">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                <img src="icon-facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                <img src="icon-instagram.png" alt="Instagram" />
-            </a>
-            <a href="https://x.com/" target="_blank" rel="noopener">
-                <img src="icon-twitter.png.jpg" alt="Twitter" />
-            </a>
-        </nav>
+        <div class="social">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
     </footer>
 
-    <!-- Small script to set the year automatically (optional) -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 
 </html>
