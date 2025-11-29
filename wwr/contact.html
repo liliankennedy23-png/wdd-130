@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Whitewater Rapids | Contact Us</title>
+  <title>Contact Us | Whitewater Rapids</title>
 
   <meta name="description" content="Contact Whitewater Rapids for questions, reservations, and information about our guided rafting trips. We'd love to hear from you!" />
 
@@ -22,9 +22,9 @@
 
     <nav class="mainnav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="active">Contact Us</a>
     </nav>
   </header>
 
@@ -68,52 +68,44 @@
       </figure>
     </section>
 
-    <!-- CONTACT FORM -->
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
+    <!-- TEAM SECTION -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
 
-      <form>
-        <!-- NAME -->
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form>
+  <!-- NAME -->
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required>
 
-        <!-- EMAIL -->
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+  <!-- EMAIL -->
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
 
-        <!-- PURPOSE -->
-        <fieldset>
-          <legend>Purpose of Message</legend>
+  <!-- PURPOSE -->
+  <fieldset>
+    <legend>Purpose of Message</legend>
 
-          <label>
-            <input type="radio" name="purpose" value="general" required>
-            General Inquiry
-          </label>
+    <input type="radio" id="purpose-general" name="purpose" value="general" required>
+    <label for="purpose-general">General Inquiry</label><br>
 
-          <label>
-            <input type="radio" name="purpose" value="reservation">
-            Reservation Question
-          </label>
+    <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+    <label for="purpose-reservation">Reservation Question</label><br>
 
-          <label>
-            <input type="radio" name="purpose" value="suggestion">
-            Website Suggestion
-          </label>
-        </fieldset>
+    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+    <label for="purpose-suggestion">Website Suggestion</label><br>
+  </fieldset>
 
-        <!-- MESSAGE -->
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+  <!-- MESSAGE -->
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
 
-        <!-- NEWSLETTER -->
-        <label class="checkbox">
-          <input type="checkbox" name="newsletter">
-          Please subscribe me to the monthly newsletter
-        </label>
+  <!-- NEWSLETTER -->
+  <input type="checkbox" id="newsletter" name="newsletter">
+  <label for="newsletter">Please subscribe me to the monthly newsletter</label>
 
-        <!-- SUBMIT BUTTON -->
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+  <!-- SUBMIT BUTTON -->
+  <button type="submit">Send Message</button>
+</form>
     </section>
 
   </main>
@@ -142,4 +134,5 @@
 
 </body>
 </html>
+
 
