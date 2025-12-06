@@ -1,25 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Whitewater Rapids — Home</title>
-    <meta name="description"
-        content="Whitewater Rapids: guided white water rafting adventures, family-friendly trips, and experienced river guides." />
-    <meta name="author" content="Lillian Kennedy" />
-    <link rel="stylesheet" href="styles/rafting.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rapids | Home</title>
+    <meta name="description" content="Experience thrilling white water rafting adventures with Whitewater Rapids. Join our guided trips for fun, excitement, and beautiful outdoor scenery.">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <div class="logo-and-cta">
-            <img src="images/logo.png" alt="Whitewater Rapids logo" class="logo" />
-            <div class="cta">Check Your Understanding</div>
-        </div>
-
-        <nav class="mainnav" aria-label="Main navigation">
-            <a href="index.html">Home</a>
+        <img src="images/logo.png" alt="Whitewater Rapids Logo">
+        <nav>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
@@ -27,53 +20,66 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero-river.jpg" alt="Rafting on a whitewater river" />
-            <h1>Whitewater Rapids</h1>
 
-            <article class="hero-article">
-                <img src="images/happy-client.jpg" alt="Happy rafting client" />
-                <p>
-                    At Whitewater Rapids our mission is to deliver safe, exhilarating, and
-                    memorable river adventures for families and thrill-seekers alike.
-                    Our experienced guides, modern equipment, and passion for rivers
-                    ensure you leave with a smile (and a great story).
-                </p>
-            </article>
-        </div>
-
-        <section class="history">
-            <h2>History</h2>
-            <p>
-                Founded in 2005 by a group of river guides, Whitewater Rapids started as a small local outfitter
-                and has since grown into a trusted regional company known for safety and fun.
-            </p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="images/hero-river.jpg" alt="Rafting on a beautiful river">
+            <h1 class="hero-msg">Adventure Awaits With Whitewater Rapids</h1>
         </section>
 
-        <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <p>Subscribe to stay updated on new trips, special offers, and rafting tips.</p>
+            <form>
+                <label>
+                    Name:
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+                <button type="submit">Sign Up</button>
+            </form>
         </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-home">
+            <h2>Your Next Adventure Starts Here</h2>
+            <p>Discover thrilling rapids, scenic canyon floats, and unforgettable overnight expeditions.</p>
+            <a href="trips.html" class="cta-button">View Our Trips</a>
+        </section>
+
+        <!-- GRID LAYOUT INFORMATION SECTION -->
+        <section class="grid-info">
+            <h2>Why Choose Whitewater Rapids?</h2>
+
+            <div class="grid-item">
+                <img src="images/rafting1.jpg" alt="Rafting group on the river">
+                <h3>Expert Guides</h3>
+                <p>Our certified guides ensure a safe and exciting rafting experience for guests of all levels.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/rafting2.jpg" alt="Beautiful river canyon view">
+                <h3>Breathtaking Scenery</h3>
+                <p>Enjoy stunning landscapes, canyon walls, and crystal-clear waters on every adventure.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/rafting3.jpg" alt="Rafting boat team paddling">
+                <h3>Thrilling Adventures</h3>
+                <p>From calm family floats to intense whitewater rapids, we offer trips for everyone.</p>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; <span id="year">2025</span> Whitewater Rapids — Lillian Kennedy</p>
-
-        <nav class="socialmedia" aria-label="Social media">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                <img src="images/icon-facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                <img src="images/icon-instagram.png" alt="Instagram" />
-            </a>
-            <a href="https://x.com/" target="_blank" rel="noopener">
-                <img src="images/icon-twitter.png" alt="Twitter" />
-            </a>
-        </nav>
+        <p>&copy; 2024 Whitewater Rapids | Lillan Kennedy</p>
+        <p><a href="images/home-wireframe.png">View Home Page Wireframe</a></p>
     </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
-
 </html>
